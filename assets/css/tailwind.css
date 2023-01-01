@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn {
+    @apply bg-red-300 text-lg text-center px-4 rounded-md;
+}
+
+.bg-primary {
+   @apply bg-slate-700 
+}
+
+.text-primary {
+    @apply text-slate-100
+}
+
+.bg-secondary {
+    
+}
