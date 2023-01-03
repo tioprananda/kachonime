@@ -8,7 +8,7 @@
             class="overflow-hidden group"
             >
             <nuxt-link
-              :to="{ name : 'id', params: {id : moviesProps.mal_id}}"
+              :to="{name : 'id', params : {id : moviesProps.mal_id}}"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
             >
@@ -22,9 +22,9 @@
               <div
                 class="absolute top-5 left-0 w-20 bg-red-400 px-3 py-2 group-hover:translate-x-3 transition ease-in-out duration-1000"
               >
-              <div v-if="this.moviesProps.score">
+              <div v-if="this.moviesProps.episodes">
                 <h1 class="text-center text-xs text-primary">
-                  Rating : {{ moviesProps.score }}
+                  Episodes : {{ moviesProps.episodes }}
                 </h1>
               </div>
               <div v-else>
@@ -39,7 +39,7 @@
                 class="py-3 absolute bottom-2 bg-white -skew-y-6 w-full group-hover:-translate-y-6 transition ease-in-out duration-1000"
               >
                 <h5
-                  class="text-gray-900 text-xl font-medium mb-2 text-center text-base overflow-hidden"
+                  class="text-gray-900 text-xl font-medium mb-2 text-center text-base"
                 >
                   {{ moviesProps.title }}
                 </h5>
@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: 'CardsImage',
+  name: 'CardsImageEpisodes',
   props: ['moviesProps'],
   data(){
     return{
